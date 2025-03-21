@@ -1,4 +1,5 @@
-import App from "@/App.vue";
+import Home from "@/views/Home.vue";
+import Users from "@/views/Users.vue";
 import { createRouter, createWebHistory } from "vue-router";
 
 const router = createRouter({
@@ -7,9 +8,12 @@ const router = createRouter({
     {
       path: "/",
       name: "home",
-      component: App,
+      component: Home,
     },
+    { path: "/users", name: "users", component: Users },
   ],
+  linkActiveClass: "active",
+  linkExactActiveClass: "active",
 });
 
 export default router;
