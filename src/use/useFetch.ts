@@ -6,6 +6,5 @@ export function useFetch(ur: RequestInfo, options?: RequestInit) {
     const resp = await fetch(ur, options);
     res.value = await resp.json();
   };
-  console.log(res);
   return { res, dt };
 }

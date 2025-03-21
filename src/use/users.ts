@@ -16,5 +16,5 @@ export async function useUsers() {
   } finally {
     isLoading.value = false;
   }
-  return { users, isLoading };
+  return { users };
 }
