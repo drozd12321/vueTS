@@ -1,7 +1,9 @@
 <template>
   <div>
     <h2>Пользователи</h2>
-    <UserList />
+    <Suspense>
+      <UserList />
+    </Suspense>
   </div>
 </template>
 <script setup lang="ts">

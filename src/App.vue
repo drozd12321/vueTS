@@ -7,11 +7,7 @@ import { Suspense } from "vue";
 <template>
   <TheNavBar />
   <main>
-    <Suspense>
-      <template #default>
-        <RouterView />
-      </template>
-    </Suspense>
+    <RouterView />
   </main>
 </template>
 

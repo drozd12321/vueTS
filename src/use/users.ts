@@ -1,4 +1,5 @@
 import { ref } from "vue";
+import type { Ref } from "vue";
 import { useFetch } from "./useFetch";
 
 export async function useUsers() {
