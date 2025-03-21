@@ -1,13 +1,22 @@
 <template>
   <div>
-    <div v-for="user in users">
+    {{ users }}
+    <div v-for="user in users.value">
       {{ user.name }}
     </div>
   </div>
 </template>
+
 <script setup lang="ts">
 import { useUsers } from "@/use/users";
 
-const { users } = await useUsers();
+interface User {
+  name: string;
+  username: string;
+  email: string;
+  address: object;
+  geo: string;
+}
+
+const { users }: User = await useUsers();
 </script>
-<style scoped></style>
