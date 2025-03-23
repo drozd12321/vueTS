@@ -7,6 +7,8 @@
   </div>
 </template>
 <script setup lang="ts">
+import { onErrorCaptured, ref } from "vue";
 import UserList from "../components/UserList.vue";
+import axios from "axios";
 </script>
 <style scoped></style>
